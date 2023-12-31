@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-size: 2em; 
+    margin-bottom: 20px; 
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-wrapper {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+    height: 600px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.grid div {
+    flex-grow: 1;
+    height: 10%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid div.frog {
+    background-image: url('../assets/Frog.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.grid div.carright {
+    background-image: url('../assets/carright.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.row-0, .row-9 {
+    background-color: chartreuse;
+}
+
+.row-1, .row-2, .row-3, .row-4, .row-5, .row-6, .row-7, .row-8  {
+    background-color: dimgray ;
+}
