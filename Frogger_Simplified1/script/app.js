@@ -6,7 +6,7 @@ function init() {
     let cells = []
     const startingPosition = 95
     let currentPosition = startingPosition
-    const carSpeed = 1000
+    const carSpeed = 500
     let fixedStartingPositions = [10, 20, 30, 40, 50, 60, 70, 80]
     let validRow = [1, 2, 3, 4, 5, 6, 7, 8]
     let collided = false
@@ -51,11 +51,11 @@ function init() {
         } else {
             clearInterval(carGenerationInterval)
         }
-    }, carSpeed * 0.5)
+    }, carSpeed * 0.4)
 
     setTimeout(() => {
         clearInterval(carGenerationInterval)
-    }, carSpeed * 30);
+    }, carSpeed * 100);
 
     setInterval(moveCars, carSpeed / 3)
 }
