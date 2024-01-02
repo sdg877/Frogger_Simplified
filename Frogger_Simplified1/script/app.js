@@ -6,7 +6,7 @@ function init() {
     let cells = []
     const startingPosition = 95
     let currentPosition = startingPosition
-    const carSpeed = 500
+    const carSpeed = 1000
     let fixedStartingPositions = [10, 20, 30, 40, 50, 60, 70, 80]
     let validRow = [1, 2, 3, 4, 5, 6, 7, 8]
     let collided = false
